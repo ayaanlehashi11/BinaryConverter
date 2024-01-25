@@ -36,7 +36,7 @@ func convertToHex(_ decimalString: String) -> String {
 ///   - fromBase: The base of the number that you want to convert
 ///   - toBase: The destination base
 /// - Returns: Return the number in toBase base or return "Invalid Input" if the input is not valid
-func convertFromAnyBaseToAnyBase(_ decimalString: String, fromBase: Int, toBase: Int) -> String {
+func convertToOctal(_ decimalString: String, fromBase: Int, toBase: Int) -> String {
     if let number = Int(decimalString, radix: fromBase) {
         return String(number, radix: toBase)
     } else {
